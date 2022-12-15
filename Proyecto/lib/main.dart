@@ -64,7 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 button1,
               ],
             ),
-            /*
        Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
@@ -72,8 +71,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
            ],
           ),
-
-        */
           ],
         ),
       ),
