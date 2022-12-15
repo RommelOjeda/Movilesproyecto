@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-        routes: <String, WidgetBuilder>{
-          "/inicio" :(BuildContext context)=> MyHomePage(title: "title"),
-        },
+      routes: <String, WidgetBuilder>{
+        "/inicio" :(BuildContext context)=> MyHomePage(title: "title"),
+      },
       //home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -50,9 +50,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Widgets"),
-        centerTitle: true,
-        backgroundColor: Colors.red[600],
+        //title: Text("Widgets"),
+        //centerTitle: true,
+        title: Image.asset('logo2.png', fit: BoxFit.cover, height: 50),
+        backgroundColor: Colors.deepOrangeAccent,
       ),
       body: Center(
         child: Row(
@@ -64,13 +65,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 button1,
               ],
             ),
-       Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            button1,
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                button1,
 
-           ],
-          ),
+              ],
+            ),
           ],
         ),
       ),
